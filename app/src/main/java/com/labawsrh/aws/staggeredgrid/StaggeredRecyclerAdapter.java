@@ -13,7 +13,8 @@ import com.bumptech.glide.request.RequestOptions;
 
 import java.util.List;
 
-public class StaggeredRecyclerAdapter extends RecyclerView.Adapter<StaggeredRecyclerAdapter.ImageViewHolder> {
+public class StaggeredRecyclerAdapter extends
+        RecyclerView.Adapter<StaggeredRecyclerAdapter.ImageViewHolder> {
 
 
     Context mContext;

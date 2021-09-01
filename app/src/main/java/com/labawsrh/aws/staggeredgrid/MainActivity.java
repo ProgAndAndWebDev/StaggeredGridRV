@@ -20,7 +20,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        getWindow()
+                .setFlags(
+                        WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                        WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         setContentView(R.layout.activity_main);
 
@@ -29,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         getSupportActionBar().hide();
 
         staggeredRv = findViewById(R.id.staggered_rv);
-        manager = new StaggeredGridLayoutManager(2,StaggeredGridLayoutManager.VERTICAL);
+        manager = new StaggeredGridLayoutManager(2,StaggeredGridLayoutManager.HORIZONTAL);
         staggeredRv.setLayoutManager(manager);
         // lets create a simple array list of images
         List<row> lst = new ArrayList<>();
